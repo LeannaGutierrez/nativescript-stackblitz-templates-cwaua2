@@ -1,7 +1,7 @@
 <Page loaded="onLoaded">
   <Page.actionBar>
     <ActionBar title="Gradebook">
-      <ActionItem text="Add Assessment" tap="onAdd" ios.position="right" android.position="popup" />
+      <ActionItem text="Add" tap="onAdd" ios.position="right" android.position="popup" />
     </ActionBar>
   </Page.actionBar>
   
@@ -9,9 +9,10 @@
     <ScrollView>
     <ListView items="{{pages}}" itemTap="onItemTap">
       <ListView.itemTemplate>
-        <StackLayout>
-          <Label text = "{{title, title + ' Assessment'}}" />
-        </StackLayout>
+        <GridLayout columns="250, 115" rows="20, 15">
+          <Label text = "{{title, title + ' Assessment'}}" row="0" column="0" />
+          <Button text="Delete" tap="onDelete" row="0" column="1"/>
+        </GridLayout>
       </ListView.itemTemplate>
     </ListView>
     </ScrollView>

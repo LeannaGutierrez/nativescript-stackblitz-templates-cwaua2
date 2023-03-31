@@ -57,3 +57,15 @@ export function onAdd(args)
     context: {model:students, index:students.pages.length-1}
   });
 }
+
+export function onDelete(args) {
+  var button = args.object;
+  var page = button.page;
+  var students = page.bindingContext;
+
+  // Remove the specific page associated with the button
+  var index = students.pages.indexOf(args.object.bindingContext);
+  if (index >= 0) {
+    students.pages.splice(index, 1);
+  }
+}
