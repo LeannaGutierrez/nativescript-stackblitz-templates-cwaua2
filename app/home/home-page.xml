@@ -10,7 +10,7 @@
     <ListView items="{{pages}}" itemTap="onItemTap">
       <ListView.itemTemplate>
         <StackLayout>
-          <Label text = "{{title, title + ' Record'}}" />
+          <Label text = "{{title, title + ' Assessment'}}" />
         </StackLayout>
       </ListView.itemTemplate>
     </ListView>
