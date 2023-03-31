@@ -1,0 +1,19 @@
+<Page loaded="onLoaded">
+  <Page.actionBar>
+    <ActionBar title="Gradebook">
+      <ActionItem text="Add Assessment" tap="onAdd" ios.position="right" android.position="popup" />
+    </ActionBar>
+  </Page.actionBar>
+  
+  <StackLayout>
+    <ScrollView>
+    <ListView items="{{pages}}" itemTap="onItemTap">
+      <ListView.itemTemplate>
+        <StackLayout>
+          <Label text = "{{title, title + ' Record'}}" />
+        </StackLayout>
+      </ListView.itemTemplate>
+    </ListView>
+    </ScrollView>
+  </StackLayout>
+</Page>

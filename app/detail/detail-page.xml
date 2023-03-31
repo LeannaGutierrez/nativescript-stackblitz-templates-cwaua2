@@ -1,0 +1,61 @@
+<Page loaded="onLoaded">
+<ScrollView>
+  <StackLayout>
+    <Label text = "{{title, 'Assessment Name: ' + title}}"/>
+    <TextField text = "{{title}} " />
+    <Label text = "Assessment Type: " />
+    <ListPicker items="{{type}}"  selectedIndex = "{{typein}}" />
+    
+    <Label text="Date Assigned: " />
+    <DatePicker date="{{dateassign}}"  />
+
+    <Label text="Date Due: " />
+    <DatePicker date="{{datedue}}"  />
+
+    <Label text="Max Points: " />
+    <TextField text="{{maxpoints}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text="  "/>
+
+    <TextField hint=" Hermoine Granger Assessment Score: " text="{{scoreStudent1}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Harry Potter Assessment Score: " text="{{scoreStudent2}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Ron Weasley Assessment Score: " text="{{scoreStudent3}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Ginny Weasley Assessment Score:" text="{{scoreStudent4}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Luna Lovegood Assessment Score:" text="{{scoreStudent5}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Draco Malfoy Assessment Score:" text="{{scoreStudent6}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Lily Potter Assessment Score:" text="{{scoreStudent7}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  James Potter Assessment Score:" text="{{scoreStudent8}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Lucius Malfoy Assessment Score:" text="{{scoreStudent9}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Label text=""/>
+
+    <TextField hint="  Sirius Black Assessment Score:" text="{{scoreStudent10}}" maxLength="3" keyboardType="number" returnKeyType="next" />
+
+    <Button tap="onTap"  text="Done" />
+  </StackLayout>
+  </ScrollView>
+</Page>
